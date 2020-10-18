@@ -1971,6 +1971,7 @@ html[dir='ltr'] .mo-modal-close {
   }
   .mo-modal-img img {
     display: none;
+    width: 100%;
   }
   .mo-modal-img img.xs-img {
     display: block;
