@@ -293,4 +293,13 @@ $(document).ready(function () {
             $(".sub2-btn>.sub-a").not(this).siblings().slideUp(500);
         })
     }
+
+    if ($(window).width() <= 991) {
+        $(".top-setting").click(function () {
+            $(this).toggleClass("active")
+        });
+    }
+    $(".header-message span.close").click(function () {
+        $(".header-message").slideUp()
+    });
 });
