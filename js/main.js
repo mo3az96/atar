@@ -310,4 +310,73 @@ $(document).ready(function () {
             $(this).siblings().slideToggle(500);
         });
     }
+    $('a[data-scroll]').click(function (e) {
+        e.preventDefault();
+        //Set Offset Distance from top to account for fixed nav
+        var target = ('#' + $(this).data('scroll'));
+        var $target = $(target);
+        //Animate the scroll to, include easing lib if you want more fancypants easings
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top - 100
+        }, 1000, 'swing');
+    });
+    ///////// **product gallery** /////////
+
+    var galleryThumbs = new Swiper('.thumbs-imgs .swiper-container', {
+
+        // loop: true,
+        // loopedSlides: 5,
+        navigation: {
+            nextEl: '.thumbs-imgs .swiper-button-next',
+            prevEl: '.thumbs-imgs .swiper-button-prev',
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 3,
+                spaceBetween: 8,
+            },
+            992: {
+                spaceBetween: 33,
+                slidesPerView: 4,
+            },
+        },
+    });
+    var galleryTop = new Swiper('.main-imgs', {
+        spaceBetween: 10,
+        // loop: true,
+        // loopedSlides: 5,
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
+
+    /////////QTY/////////
+    var minVal = 1, maxVal = 100; // Set Max and Min values
+    // Increase product quantity on cart page
+    $(".qty-control.plus").on('click', function () {
+        var $parentElm = $(this).parents(".qty-div");
+        $(this).addClass("clicked");
+        setTimeout(function () {
+            $(".clicked").removeClass("clicked");
+        }, 100);
+        var value = $parentElm.find(".qty").val();
+        if (value < maxVal) {
+            value++;
+        }
+        $parentElm.find(".qty").val(value);
+    });
+    // Decrease product quantity on cart page
+    $(".qty-control.minus").on('click', function () {
+        var $parentElm = $(this).parents(".qty-div");
+        $(this).addClass("clicked");
+        setTimeout(function () {
+            $(".clicked").removeClass("clicked");
+        }, 100);
+        var value = $parentElm.find(".qty").val();
+        if (value > 1) {
+            value--;
+        }
+        $parentElm.find(".qty").val(value);
+    });
+
 });

@@ -1,0 +1,943 @@
+<!DOCTYPE HTML>
+<HTML dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <title>متجر العطرجي</title>
+    <link rel='shortcut icon' type='img/png' href='images/fav.png' />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/Linearicons.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="overflow">
+
+    <!-- Start preloader -->
+    <div class="pre-loader">
+        <div class="content"><img src="images/preloader.png" alt="logo" />
+            <div class="mo-progress-bar">
+                <span class="bar">
+                    <span class="progress">
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- End preloader -->
+    <div class="header-message">
+        توقف الدفع عند الاستلام مؤقتا
+        <span class="close">
+            <span class="lnr lnr-cross"></span>
+        </span>
+    </div>
+    <!-- Start Header -->
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-flex">
+                    <h6 class="welcome fixall">مرحبًا بكم في متجر العطرجي</h6>
+                    <div class="top-settings">
+                        <div class="top-setting acc">
+                            <span class="setting-anchor">حسابي </span>
+                            <div class="top-dropDown">
+                                <a href="my-acc.html" class="drop-link fixall">تسجيل الدخول</a>
+                                <a href="my-acc.html" class="drop-link fixall">تسجيل جديد</a>
+                            </div>
+                        </div>
+                        <div class="top-setting curr">
+                            <span class="setting-anchor">الريال السعودي</span>
+                            <div class="top-dropDown">
+                                <a href="#!" class="drop-link fixall">الريال سعودي</a>
+                                <a href="#!" class="drop-link fixall">الدرهم إماراتي</a>
+                                <a href="#!" class="drop-link fixall">الدولار أمريكي</a>
+                                <a href="#!" class="drop-link fixall">اليورو</a>
+                            </div>
+                        </div>
+                        <div class="top-setting lang">
+                            <span class="setting-anchor">العربية</span>
+                            <div class="top-dropDown">
+                                <a href="index.html" class="drop-link fixall">العربية</a>
+                                <a href="index-en.html" class="drop-link fixall">English</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sec-header">
+            <div class="container">
+                <div class="header">
+                    <div class="logo-cont">
+                        <a href="#!" class="menu-icon fixall">
+                            <span class="lnr lnr-menu"></span>
+                        </a>
+                        <a href="index.html" class="logo fixall">
+                            <img src="images/logo.png" class="img-responsive">
+                        </a>
+                        <a href="#!" class="cart-ico fixall">
+                            <span class="lnr lnr-cart"></span>
+                        </a>
+                    </div>
+
+
+                    <div class="mo-search-form">
+                        <div class="search-select-cont">
+                            <select class="mo-search-select fixall">
+                                <option>حميع الفئات</option>
+                                <option>البخور</option>
+                                <option>العطور العربية</option>
+                                <option>العطور الشرقية</option>
+                                <option>العطور الغربية</option>
+                            </select>
+                        </div>
+                        <input type="text" class="mo-search-input fixall" placeholder="كلمة البحث">
+                        <button class="mo-search-btn fixall">
+                            <span class="lnr lnr-magnifier"></span>
+                        </button>
+                    </div>
+
+                    <div class="contact-links">
+                        <a href="tel:92000000" class="contact-link fixall">
+                            <span class="contact-text">92000000</span>
+                            <span class="lnr lnr-phone-handset"></span>
+                        </a>
+                        <a href="mailto:info@alatarji.com" class="contact-link fixall">
+                            <span class="contact-text">info@alatarji.com</span>
+                            <span class="lnr lnr-envelope"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-cont">
+                <div class="container">
+                    <div class="nav-flex">
+                        <nav>
+                            <ul class="mo-navbar fixall list-unstyled">
+                                <li class="cats-li drop-btn">
+                                    <h6 class="cats-a fixall">
+                                        <span class="lnr lnr-menu"></span>
+                                        تسوق حسب الفئات
+                                    </h6>
+                                    <ul class="sub-ul fixall list-unstyled">
+                                        <li class="sub-li sub2-btn">
+                                            <a href="#!" class="sub-a fixall">
+                                                البخور
+                                            </a>
+                                            <ul class="sub2-ul list-unstyled fixall">
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 1
+                                                    </a>
+                                                </li>
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 2
+                                                    </a>
+                                                </li>
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 3
+                                                    </a>
+                                                </li>
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 4
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                العطور العربية
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                العطور الشرقية
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                العطور الغربية
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                الهدايا والاطقم
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                مستحضرات التجميل
+                                            </a>
+                                        </li>
+                                        <li class="sub-li sub2-btn">
+                                            <a href="#!" class="sub-a fixall">
+                                                معطرات الجسم
+                                            </a>
+                                            <ul class="sub2-ul list-unstyled fixall">
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 1
+                                                    </a>
+                                                </li>
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 2
+                                                    </a>
+                                                </li>
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 3
+                                                    </a>
+                                                </li>
+                                                <li class="sub-li">
+                                                    <a href="#!" class="sub-a fixall">
+                                                        قسم فرعي 4
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                معطرات الجو
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                الورد
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                الخلطات العربية
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                دهن عود
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                العطور الزيتية
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="#!" class="sub-a fixall">
+                                                المسك
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-li">
+                                    <a href="index.html" class="nav-a fixall">الرئيسية</a>
+                                </li>
+                                <li class="nav-li xs-li drop-btn">
+                                    <a href="#!" class="nav-a fixall">حسابي</a>
+                                    <ul class="sub-ul fixall list-unstyled">
+                                        <li class="sub-li">
+                                            <a href="my-acc.html" class="sub-a fixall">
+                                                تسجيل الدخول
+                                            </a>
+                                        </li>
+                                        <li class="sub-li">
+                                            <a href="my-acc.html" class="sub-a fixall">
+                                                تسجيل جديد
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-li">
+                                    <a href="#!" class="nav-a fixall">العروض المميزة</a>
+                                </li>
+                                <li class="nav-li">
+                                    <a href="#!" class="nav-a fixall">وصل حديثًا</a>
+                                </li>
+                                <li class="nav-li">
+                                    <a href="#!" class="nav-a fixall">الماركات</a>
+                                </li>
+                                <li class="nav-li">
+                                    <a href="#!" class="nav-a fixall">من نحن</a>
+                                </li>
+                                <li class="nav-li">
+                                    <a href="#!" class="nav-a fixall">اتصل بنا</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a href="#!" class="cart-ico fixall">
+                            <span class="lnr lnr-cart"></span>
+                            <span class="mo-text">العربة</span>
+                            <span class="mo-count">(0)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start breadcrumb -->
+    <section class="page-breadcrumb">
+        <div class="container">
+            <ul class="mo-breadcrumb list-unstyled fixall">
+                <li class="mo-breadcrumb-li">
+                    <a href="index.html" class="mo-breadcrumb-a fixall home">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </li>
+                <li class="mo-breadcrumb-li">
+                    <a href="#!" class="mo-breadcrumb-a fixall">
+                        العطور الغربية
+                    </a>
+                </li>
+                <li class="mo-breadcrumb-li">
+                    <a href="#!" class="mo-breadcrumb-a fixall active">
+                        اسم منتج تجريبي
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- End breadcrumb -->
+
+    <!-- Start Content -->
+    <section class="page-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product-imgs">
+                        <div class="swiper-container main-imgs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="main-img">
+                                        <a data-fancybox="media" href="images/main-product.jpg" class="fancy-link">
+                                            <img src="images/main-product.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-img">
+                                        <a data-fancybox="media" href="images/thumb-pro2.jpg" class="fancy-link">
+                                            <img src="images/thumb-pro2.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-img">
+                                        <a data-fancybox="media" href="images/thumb-pro3.jpg" class="fancy-link">
+                                            <img src="images/thumb-pro3.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="main-img">
+                                        <a data-fancybox="media" href="images/thumb-pro4.jpg" class="fancy-link">
+                                            <img src="images/thumb-pro4.jpg" class="img-responsive">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="thumbs-imgs">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img">
+                                            <div class="thumb-link">
+                                                <img src="images/thumb-pro1.jpg" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img">
+                                            <div class="thumb-link">
+                                                <img src="images/thumb-pro2.jpg" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img">
+                                            <div class="thumb-link">
+                                                <img src="images/thumb-pro3.jpg" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="thumb-img">
+                                            <div class="thumb-link">
+                                                <img src="images/thumb-pro4.jpg" class="img-responsive">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next fixall swiper-btn">
+                                <span class='lnr lnr-chevron-right'>
+                                </span>
+                            </div>
+                            <div class="swiper-button-prev fixall swiper-btn">
+                                <span class='lnr lnr-chevron-left'>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="product-title">
+                        اسم منتج تجريبي
+                    </h1>
+                    <div class="mo-rate">
+                        <div class="stars">
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star active"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <a data-toggle="tab" href="#comments" class="review-count fixall" data-scroll="comments">
+                            (75 التقييمات)</a>
+                    </div>
+                    <div class="product-info">
+                        <div>
+                            <h3>الماركة</h3>
+                            <a href="#!">اسم ماركة تجريبي</a>
+                        </div>
+                        <div>
+                            <h3>كود المنتج</h3>
+                            <span> X5FRZ2-20</span>
+                        </div>
+                        <div>
+                            <h3>حالة التوفر</h3>
+                            <span class="available">متوفر</span>
+                        </div>
+                    </div>
+                    <div class="product-opts">
+                        <div class="product-opt form-group required">
+                            <label>
+                                الحجم
+                            </label>
+                            <div class="select-cont">
+                                <select class="form-control">
+                                    <option value="50">50 مل</option>
+                                    <option value="60">60 مل</option>
+                                    <option value="70">70 مل</option>
+                                    <option value="80">80 مل</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="product-opt form-group required">
+                            <label>
+                                اللون
+                            </label>
+                            <div class="select-cont">
+                                <select class="form-control">
+                                    <option value="color1">دهبي</option>
+                                    <option value="color2">دهبي</option>
+                                    <option value="color3">دهبي</option>
+                                    <option value="color4">دهبي</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-prices">
+                        <span class="price-hint">
+                            خصم %10
+                        </span>
+                        <div class="prices">
+                            <span class="price">1500 ريال </span>
+                            <span class="old-price">1725 ريال</span>
+                        </div>
+                    </div>
+                    <div class="qty-cart">
+                        <div class="qty-div">
+                            <span class="qty-control plus">
+                                <i class="fas fa-plus"></i>
+                            </span>
+                            <span class="qty-control minus">
+                                <i class="fas fa-minus"></i>
+                            </span>
+                            <input readonly type="number" class="qty fixall" value="1">
+                        </div>
+                        <button class="add-to-cart fixall">
+                            <span class="lnr lnr-cart"></span>
+                            اضف إلى السلة
+                        </button>
+                    </div>
+                    <div class="share-compare-fav">
+                        <a href="#!" class="tool-item fixall">
+                            <span class="lnr lnr-bullhorn"></span>
+                            <span class="text">مشاركة</span>
+                        </a>
+                        <a href="#!" class="tool-item fixall">
+                            <span class="lnr lnr-sync"></span>
+                            <span class="text">اضف للمقارنة</span>
+                        </a>
+                        <a href="#!" class="tool-item fixall">
+                            <span class="lnr lnr-heart"></span>
+                            <span class="text">اضف للمفضلة</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-feats">
+                <div class="product-feat">
+                    <div class="feat-img">
+                        <img src="images/feat1.png" class="img-responsive">
+                    </div>
+                    <span class="feat-name">
+                        منتجات أصلية
+                    </span>
+                </div>
+                <div class="product-feat">
+                    <div class="feat-img">
+                        <img src="images/feat2.png" class="img-responsive">
+                    </div>
+                    <span class="feat-name">
+                        الدفع عند الإستلام
+                    </span>
+                </div>
+                <div class="product-feat">
+                    <div class="feat-img">
+                        <img src="images/feat3.png" class="img-responsive">
+                    </div>
+                    <span class="feat-name">
+                        شحن سريع
+                    </span>
+                </div>
+            </div>
+            <div class="product-tabs">
+                <ul class="mo-navtabs fixall list-unstyled">
+                    <li class="active fixall">
+                        <a data-toggle="tab" href="#pro-desc" class="fixall tab-link">
+                            وصف المنتج
+                        </a>
+                    </li>
+                    <li class="fixall">
+                        <a data-toggle="tab" href="#pro-feats" class="fixall tab-link">
+                            المواصفات
+                        </a>
+                    </li>
+                    <li class="fixall">
+                        <a data-toggle="tab" href="#comments" class="fixall tab-link">
+                            التقييمات
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="pro-desc" class="tab-pane fade in active">
+                        <p class="pro-desc fixall">
+                            هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر
+                            إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما،
+                            عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة في هذا النص.
+                            بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار مقاطع من نص لوريم
+                            إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام كلمات من قاموس يحوي على
+                            أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية، لتكوين نص لوريم إيبسوم ذو
+                            شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح خالي من التكرار، أو أي كلمات أو
+                            عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص لوريم إيبسوم حقيقي على الإنترنت.
+                        </p>
+                    </div>
+                    <div id="pro-feats" class="tab-pane fade">
+                        pro-feats
+                    </div>
+                    <div id="comments" class="tab-pane fade">
+                        pro-comments
+                    </div>
+                </div>
+            </div>
+
+            <section class="products-slider-sec">
+                <h3 class="sec-title fixall">
+                    منتجات ذات صلة
+                </h3>
+                <div class="container">
+                    <div class="products-slider best-slider">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="img-here">
+                                            <a href="product.html" class="product-img">
+                                                <img src="images/pro1.jpg" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="pro-info">
+                                            <span class="pro-label off">خصم %10</span>
+                                            <h4 class="fixall pro-name">
+                                                <a href="product.html" class="pro-name fixall">
+                                                    اسم منتج تجريبي
+                                                </a>
+                                            </h4>
+                                            <div class="prices">
+                                                <h3 class="price fixall">
+                                                    250 ر.س
+                                                </h3>
+                                                <h5 class="old-price fixall">
+                                                    300 ر.س
+                                                </h5>
+                                            </div>
+
+                                            <div class="tools">
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-cart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-heart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-sync"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="img-here">
+                                            <a href="product.html" class="product-img">
+                                                <img src="images/pro2.jpg" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="pro-info">
+                                            <span class="pro-label new">جديد</span>
+                                            <h4 class="fixall pro-name">
+                                                <a href="product.html" class="pro-name fixall">
+                                                    اسم منتج تجريبي اسم منتج تجريبي اسم منتج تجريبي اسم منتج تجريبي اسم
+                                                    منتج تجريبي
+                                                </a>
+                                            </h4>
+                                            <div class="prices">
+                                                <h3 class="price fixall">
+                                                    250 ر.س
+                                                </h3>
+                                            </div>
+
+                                            <div class="tools">
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-cart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-heart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-sync"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product out">
+                                        <div class="img-here">
+                                            <a href="product.html" class="product-img">
+                                                <img src="images/pro1.jpg" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="pro-info">
+                                            <span class="pro-label new">جديد</span>
+                                            <h4 class="fixall pro-name">
+                                                <a href="product.html" class="pro-name fixall">
+                                                    اسم منتج تجريبي
+                                                </a>
+                                            </h4>
+                                            <div class="prices">
+                                                <h3 class="price fixall">
+                                                    250 ر.س
+                                                </h3>
+                                            </div>
+
+                                            <div class="tools">
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-cart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-heart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-sync"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="out-div">نفذت الكمية</div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="img-here">
+                                            <a href="product.html" class="product-img">
+                                                <img src="images/pro3.jpg" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="pro-info">
+                                            <span class="pro-label ship">شحن مجاني</span>
+                                            <h4 class="fixall pro-name">
+                                                <a href="product.html" class="pro-name fixall">
+                                                    اسم منتج تجريبي
+                                                </a>
+                                            </h4>
+                                            <div class="prices">
+                                                <h3 class="price fixall">
+                                                    250 ر.س
+                                                </h3>
+                                            </div>
+
+                                            <div class="tools">
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-cart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-heart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-sync"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="product">
+                                        <div class="img-here">
+                                            <a href="product.html" class="product-img">
+                                                <img src="images/pro5.jpg" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="pro-info">
+                                            <span class="pro-label off">خصم %10</span>
+                                            <h4 class="fixall pro-name">
+                                                <a href="product.html" class="pro-name fixall">
+                                                    اسم منتج تجريبي
+                                                </a>
+                                            </h4>
+                                            <div class="prices">
+                                                <h3 class="price fixall">
+                                                    250 ر.س
+                                                </h3>
+                                                <h5 class="old-price fixall">
+                                                    300 ر.س
+                                                </h5>
+                                            </div>
+
+                                            <div class="tools">
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-cart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-heart"></span>
+                                                </a>
+                                                <a href="#!" class="tool fixall">
+                                                    <span class="lnr lnr-sync"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <div class="swiper-button-next fixall swiper-btn"><span class='lnr lnr-chevron-right'></span>
+                        </div>
+                        <div class="swiper-button-prev fixall swiper-btn"><span class='lnr lnr-chevron-left'></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-about">
+                            <div class="footer-logo">
+                                <img src="images/logo.png" class="img-responsive">
+                            </div>
+                            <p class="footer-text fixall">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض
+                                النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم إيبسوم ما
+                            </p>
+                            <a href="#!" class="whats fixall">
+                                <i class="fab fa-whatsapp"></i>
+                                تحدث إلينا عبر Whatsapp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <div class="nav-foot-cont">
+                            <h4 class="foot-head fixall nav-foot-head">
+                                معلومات
+                            </h4>
+                            <ul class="foot-nav fiall list-unstyled">
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        من نحن
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        الشحن والتوصيل
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        الحسابات البنكية
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        الخصوصية
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        شروط الإستخدام
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-sm-3">
+                        <div class="nav-foot-cont">
+                            <h4 class="foot-head fixall nav-foot-head">
+                                خدمة العملاء
+                            </h4>
+                            <ul class="foot-nav fiall list-unstyled">
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        اتصل بنا
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        ارجاع الطلب
+                                    </a>
+                                </li>
+                                <li class="foot-li">
+                                    <a href="#!" class="foot-a fixall">
+                                        خريطة الموقع
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="newsletter-cont">
+                            <h4 class="foot-head fixall nav-foot-head">
+                                النشرة البريدية
+                            </h4>
+                            <div class="foot-nav">
+                                <h6 class="news-subhead fixall">
+                                    ليصلك جديد المنتجات وأفضل العروض
+                                </h6>
+                                <div class="news-form">
+                                    <div class="news-input-cont">
+                                        <input type="email" class="news-input fixall"
+                                            placeholder="ادخل بريدك الإلكتروني">
+                                        <span class="mail-ico lnr lnr-envelope"></span>
+                                    </div>
+                                    <button class="news-btn fixall">
+                                        اشتراك
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-cont">
+                            <h4 class="foot-head fixall social-head">
+                                تابعنا على
+                            </h4>
+                            <div class="socials">
+                                <a href="#!" class="social fixall">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#!" class="social fixall">
+                                    <i class="fab fa-snapchat-ghost"></i>
+                                </a>
+                                <a href="#!" class="social fixall">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#!" class="social fixall">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="last-footer">
+            <div class="container">
+                <div class="last-footer-flex">
+                    <div class="copyright">
+                        ©
+                        متجر عطور مشعل مظفر العطرجي
+                        2020
+                    </div>
+                    <div class="payments">
+                        <img src="images/payment.png" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start modal -->
+    <div class="mo-modal-overlay">
+        <div class="mo-modal-cont">
+            <div class="mo-modal">
+                <span class="mo-modal-close">
+                    <span class="lnr lnr-cross"></span>
+                </span>
+                <div class="mo-modal-img">
+                    <img src="images/news.png" class="img-responsive ">
+                    <img src="images/news-xs.png" class="img-responsive xs-img">
+                </div>
+                <div class="mo-modal-content">
+                    <h1 class="news-head fixall">
+                        اشترك الآن في النشرة البريدية
+                        الخاصة بمتجر العطرجي
+                    </h1>
+                    <h2 class="modal-subhead fixall">
+                        ليصلك جديد المنتجات وأفضل العروض
+                    </h2>
+                    <div class="news-form">
+                        <div class="news-input-cont">
+                            <input type="email" class="news-input fixall" placeholder="ادخل بريدك الإلكتروني">
+                            <span class="mail-ico lnr lnr-envelope"></span>
+                        </div>
+                        <button class="news-btn fixall">
+                            اشتراك
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End modal -->
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</HTML>
