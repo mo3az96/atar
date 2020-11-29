@@ -1,0 +1,91 @@
+/*//////////////////////////////preloader//////////////////////////////*/
+.pre-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 220px;
+        display: block;
+
+        @include xs {
+            width: 120px;
+        }
+    }
+
+    .mo-progress-bar {
+        width: 200px;
+        margin: 20px auto 0;
+
+        @include xs {
+            width: 100px;
+        }
+
+        span {
+            display: block;
+        }
+    }
+
+    .bar {
+        background-color: $border;
+        box-shadow: none;
+    }
+
+    .progress {
+        animation: loader 8s ease infinite;
+        background: #000;
+        width: 0;
+        height: 2px;
+    }
+}
+
+@keyframes loader {
+    0% {
+        width: 0;
+    }
+
+    20% {
+        width: 10%;
+    }
+
+    25% {
+        width: 24%;
+    }
+
+    43% {
+        width: 41%;
+    }
+
+    56% {
+        width: 50%;
+    }
+
+    66% {
+        width: 52%;
+    }
+
+    71% {
+        width: 60%;
+    }
+
+    75% {
+        width: 76%;
+    }
+
+    94% {
+        width: 86%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+/*//////////////////////////////preloader//////////////////////////////*/

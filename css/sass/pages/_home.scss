@@ -1,0 +1,110 @@
+.feats {
+    display: flex;
+    align-items: center;
+    padding: 21px 0;
+
+    @include xs {
+        display: none;
+    }
+}
+
+.feat {
+    position: relative;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $sec;
+
+    @include xs {
+        flex-direction: column;
+        flex: auto;
+    }
+
+    .feat-icon {
+        font-size: 20px;
+        margin: 0 5px;
+
+        @include xs {
+            margin: 0;
+        }
+    }
+
+    .feat-text {
+        margin: 0 5px;
+        font-size: 15px;
+
+        &.md-text {
+            display: none;
+        }
+
+        @include md {
+            display: none;
+
+            &.md-text {
+                display: block;
+            }
+        }
+
+        @include xs {
+            font-size: 12px;
+            font-weight: 500;
+            margin: 0;
+        }
+    }
+}
+
+.sec-title {
+    font-size: 26px;
+    color: $text;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+
+    @include sm {
+        font-size: 20px;
+        margin-bottom: 18px;
+    }
+}
+
+.cats-slider-sec {
+    background-color: $back;
+    margin-top: 60px;
+    padding: 70px 0;
+
+    @include sm {
+        margin-top: 30px;
+        padding: 45px 0;
+    }
+}
+
+.products-slider {
+    position: relative;
+}
+
+.products-slider-sec {
+    margin-top: 85px;
+
+    @include sm {
+        margin-top: 60px;
+
+        .container {
+            html[dir='ltr'] & {
+                padding-right: 0;
+            }
+
+            html[dir='rtl'] & {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.brands-cont {
+    margin-top: 95px;
+
+    @include sm {
+        margin-top: 15px;
+
+    }
+}

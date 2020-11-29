@@ -1,0 +1,29 @@
+.brand-item {
+    padding-bottom: 100%;
+    position: relative;
+    width: 100%;
+
+    .brand {
+        position: absolute;
+        width: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+
+        img {
+            margin: auto;
+            width: auto;
+            filter: grayscale(0);
+            opacity: 0.4;
+            transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+            img {
+                filter: grayscale(1);
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,151 @@
+.cats-li {
+    background-color: $main;
+    display: flex;
+    align-items: center;
+    width: 262px;
+    height: 48px;
+
+    position: relative;
+
+    @include sm {
+        width: 225px;
+    }
+
+    html[dir='ltr'] & {
+        margin-right: 20px;
+
+        @include sm {
+            margin-right: 0;
+        }
+    }
+
+    html[dir='rtl'] & {
+        margin-left: 20px;
+
+        @include sm {
+            margin-left: 0;
+        }
+    }
+}
+
+.cats-a {
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    height: 100%;
+
+    .lnr {
+        html[dir='ltr'] & {
+            margin-right: 9px;
+        }
+
+        html[dir='rtl'] & {
+            margin-left: 9px;
+        }
+    }
+
+    &::after {
+        font-family: 'Linearicons-Free';
+        content: "\e874";
+        font-size: 12px;
+        color: #fff;
+        display: block;
+        transition: all 0.3s ease-in-out;
+
+        html[dir='ltr'] & {
+            margin-left: auto;
+        }
+
+        html[dir='rtl'] & {
+            margin-right: auto;
+        }
+    }
+}
+
+.sub-ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 999;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 13px 0;
+    display: none;
+}
+
+.sub-li {
+    padding: 0 22px;
+    position: relative;
+    margin-bottom: 13px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+
+    &.sub2-btn {
+        >.sub-a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+
+            &::after {
+                font-family: 'Linearicons-Free';
+                content: "\e875";
+                font-size: 10px;
+
+                html[dir='ltr'] & {
+                    content: "\e876";
+                }
+            }
+        }
+
+        &:hover {
+            >.sub-a {
+                color: $sec;
+            }
+
+            .sub2-ul {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.sub-a {
+    font-size: 16px;
+    color: $text;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        color: $sec;
+    }
+}
+
+.sub2-ul {
+    position: absolute;
+    top: -15px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9999;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+    padding: 13px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    html[dir='ltr'] & {
+        left: 100%;
+    }
+
+    html[dir='rtl'] & {
+        right: 100%;
+    }
+}

@@ -1,0 +1,275 @@
+footer {
+    background-color: $main;
+    margin-top: 20px;
+    padding-top: 60px;
+
+    @include sm {
+        margin-top: 60px;
+        padding-top: 30px;
+    }
+
+    .container {
+        @include xs {
+            padding: 0 15px;
+
+            .row {
+                margin: 0 -15px;
+            }
+
+            [class^="col-"] {
+                padding: 0 15px;
+            }
+        }
+    }
+}
+
+.footer-about {
+    @include sm {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+
+.footer-logo {
+    filter: invert(1);
+    width: 259px;
+    margin-bottom: 13px;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.75;
+    color: $footer;
+
+    @media (min-width: 1200px) {
+        html[dir='ltr'] & {
+            padding-right: 30px;
+        }
+
+        html[dir='rtl'] & {
+            padding-left: 30px;
+        }
+    }
+}
+
+.whats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 3px;
+    background-color: #0dc043;
+    width: 262px;
+    height: 55px;
+    transition: all 0.3s ease-in-out;
+    margin-top: 30px;
+
+    i {
+        font-weight: 400;
+        font-size: 30px;
+        width: 38px;
+    }
+
+    &:hover {
+        color: #fff;
+        background-color: #15db50;
+    }
+
+    @include sm {
+        margin-top: 20px;
+    }
+}
+
+.foot-head {
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 19px;
+
+    &.social-head {
+        margin-bottom: 0;
+    }
+}
+
+.foot-li {
+    margin-bottom: 7px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.foot-a {
+    font-size: 16px;
+    color: $footer;
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        transform: translateX(-5px);
+        color: #fff;
+
+        html[dir='ltr'] & {
+            transform: translateX(5px);
+        }
+    }
+}
+
+.news-subhead {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 14px;
+}
+
+.news-form {
+    .news-input-cont {
+        position: relative;
+    }
+
+    .mail-ico {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        color: $footer;
+
+        html[dir='ltr'] & {
+            left: 0;
+        }
+
+        html[dir='rtl'] & {
+            right: 0;
+        }
+    }
+
+    .news-input {
+        width: 100%;
+        height: 50px;
+        padding: 0 30px;
+        color: #fff;
+        background-color: transparent;
+        border-bottom: 1px solid #262626;
+        transition: all 0.3s ease-in-out;
+
+        &::placeholder {
+            color: #8c8c8c;
+            font-weight: 300;
+        }
+
+        &:focus {
+            border-color: #fff;
+        }
+    }
+
+    .news-btn {
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        color: $main;
+        font-weight: 800;
+        margin-top: 20px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: rgba(#fff, 0.85);
+        }
+    }
+}
+
+.social-cont {
+    display: flex;
+    align-items: center;
+    margin-top: 27px;
+
+    @include xs {
+        flex-direction: column;
+        justify-content: center;
+
+        .social-head {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    margin: 0 11px;
+}
+
+.social {
+    margin: 0 3px;
+    font-size: 18px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #1a1a1a;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        background-color: #fff;
+        color: $text;
+    }
+}
+
+.nav-foot-cont,
+.newsletter-cont {
+    margin-top: 38px;
+
+    @include sm {
+        margin-top: 0;
+    }
+}
+
+.newsletter-cont {
+    @include sm {
+        margin-top: 0;
+    }
+}
+
+.last-footer {
+    margin-top: 77px;
+    background-color: #080808;
+    padding: 17px 0 16px;
+
+    @include xs {
+        margin-top: 30px;
+        background-color: transparent;
+        padding: 10px 0;
+    }
+}
+
+.last-footer-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+    color: $footer;
+
+    @include xs {
+        flex-direction: column;
+
+        .payments {
+            order: 1;
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            order: 2;
+        }
+    }
+}

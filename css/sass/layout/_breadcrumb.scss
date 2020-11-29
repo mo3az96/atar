@@ -1,0 +1,42 @@
+.mo-breadcrumb {
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+
+    @include xs {
+        display: none;
+    }
+}
+
+.mo-breadcrumb-li {
+    display: flex;
+    align-items: center;
+
+    ~.mo-breadcrumb-li {
+        &::before {
+            color: #989898;
+            content: "/";
+            margin: 0 9px;
+        }
+    }
+}
+
+.mo-breadcrumb-a {
+    font-size: 14px;
+    color: #989898;
+
+    &:hover,
+    &:focus {
+        color: $text;
+    }
+
+    &.home {
+        html[dir='ltr'] & {
+            margin-right: 6px;
+        }
+
+        html[dir='rtl'] & {
+            margin-left: 6px;
+        }
+    }
+}

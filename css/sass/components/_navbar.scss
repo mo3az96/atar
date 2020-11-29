@@ -1,0 +1,55 @@
+nav {
+    @include sm {
+        width: 100%;
+
+        html[dir='ltr'] & {
+            margin-right: 15px;
+        }
+
+        html[dir='rtl'] & {
+            margin-left: 15px;
+        }
+    }
+}
+
+.mo-navbar {
+    display: flex;
+    align-items: center;
+
+    @include sm {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+.nav-li {
+    margin: 0 11px;
+
+    @include sm {
+        margin: 0;
+    }
+
+    &.xs-li {
+        display: none;
+
+        @include xs {
+            display: block;
+        }
+    }
+}
+
+.nav-a {
+    font-size: 16px;
+    color: $text;
+    transition: all 0.3s ease-in-out;
+
+    @media (min-width: 992px) {
+        line-height: 48px;
+        display: block;
+    }
+
+    &:hover,
+    &:focus {
+        color: $sec;
+    }
+}
