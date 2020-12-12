@@ -2214,6 +2214,7 @@ html[dir='rtl'] .search-select-cont::after {
   width: 100%;
   border: 1px solid #e6e6e6;
   color: var(--primary-color);
+  background-color: #fff;
   font-size: 14px;
   padding-right: calc(40% + 20px);
   padding-left: 40px;
@@ -3225,6 +3226,10 @@ html[dir='rtl'] .sub2-ul {
   right: 100%;
 }
 
+.products-slider {
+  position: relative;
+}
+
 .swiper-pagination {
   position: relative;
   width: 100%;
@@ -3483,7 +3488,7 @@ html[dir='rtl'] .sub2-ul {
 @media (max-width: 767px) {
   nav {
     position: absolute;
-    top: 70%;
+    top: 130px;
     left: 0;
     max-height: 70vh;
     width: 100%;
